@@ -71,9 +71,8 @@ class TicTacToe
   
   def won?
     WIN_COMBINATIONS.any? do |combo|
-      if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] &&
-      @board[comb[0]] == "X" && @board[comb[1]] == "X" && @board[comb[2]] == "X" || @board[comb[0]] == "O" && @board[comb[1]] == "O" && @board[comb[2]] == "O" 
-      odp ? odp : false
+      if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
+      
     end
   end
 
